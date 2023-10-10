@@ -1,21 +1,32 @@
 body{margin:0;
-overflow-x: hidden}
+    padding: 0;
+overflow-x: hidden;
+font-size : 1.1em
+}
 .navBar{
     background-color: yellow;
-    width: 100vw;
+
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 2vw;
+    padding-left: 2vw;
+
+
+
 }
 .burger{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border : 4px black solid;
     border-radius: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-right: 15px;
 
 }
 .steak {
@@ -23,4 +34,59 @@ overflow-x: hidden}
     width: 80%;
     border-radius: 4%;
 
+}
+.liens{
+    display: none;
+}
+.image {
+    width: 100%;
+    height: 17vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img1{
+    background-image: url("image/raclette1.png");
+}
+.img2{
+    background-image: url("image/raclette2.png");
+}
+.img3{
+    background-image: url("image/raclette3.png");
+}
+
+.raclette{
+    border-radius: 4%;
+    border: yellow 4px solid;
+    width: 90%;
+    margin: 10px;
+    padding: 15px;
+}
+.raclettes {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media only screen and (min-width: 768px){
+
+
+    .raclettes{
+        display: flex;
+        flex-direction: row;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    .burger{
+        display: none;
+    }
+    .lien{
+        text-decoration : none;
+        text-transform: uppercase;
+        color: saddlebrown;
+    }
+    .liens{
+        display: block;
+    }
 }
